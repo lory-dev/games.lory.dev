@@ -1,5 +1,11 @@
 import { Card } from "@/components/ui/card"
 import Link from "next/link"
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Liminality Changelog - games.lory.dev",
+  description: "The most Liminal game yet.",
+};
 
 export default function CyberOdysseyChangelog() {
   return (

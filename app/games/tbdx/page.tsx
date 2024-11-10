@@ -4,6 +4,12 @@ import { Download, Star, Clock, Users, Video, BadgeInfo, HeartCrack } from "luci
 import Image from "next/image"
 import Link from "next/link"
 import gamescreenshot from "../../img/tbdxss.jpg"
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "The Backrooms Deluxe - games.lory.dev",
+  description: "Immersive short backrooms game.",
+};
 
 export default function CyberOdyssey() {
   return (

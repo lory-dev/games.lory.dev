@@ -4,6 +4,12 @@ import { Download, Star, Clock, Users, Video, BadgeInfo } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import gamescreenshot from "../../img/bb1.png"
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Budget Backrooms - games.lory.dev",
+  description: "Free open source backrooms game developed by DavidJoacaRo",
+};
 
 export default function CyberOdyssey() {
   return (
