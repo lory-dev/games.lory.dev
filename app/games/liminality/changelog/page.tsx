@@ -1,13 +1,15 @@
 import { Card } from "@/components/ui/card"
 import Link from "next/link"
 import type { Metadata } from "next";
+import Image from "next/image"
+import liminalityss from "../../../img/liminalityone.png"
 
 export const metadata: Metadata = {
   title: "Liminality Changelog - games.lory.dev",
   description: "The most Liminal game yet.",
 };
 
-export default function CyberOdysseyChangelog() {
+export default function LiminalityChangelog() {
   return (
     <div className="min-h-screen bg-black text-white">
       <header className="fixed top-0 w-full z-50 bg-black/50 backdrop-blur-sm border-b border-white/10">
@@ -30,6 +32,51 @@ export default function CyberOdysseyChangelog() {
           <div className="container mx-auto px-4">
             <h1 className="text-4xl font-bold mb-8">Liminality Changelog</h1>
             <div className="space-y-8">
+              <Card className="bg-black/50 border border-white/10 p-6">
+                <h2 className="text-2xl font-bold mb-4 text-white">Version 1.0</h2>
+                <p className="text-gray-400 mb-4">Releasing on April 20, 2025</p>
+                <ul className="list-disc list-inside space-y-2 text-gray-300 pb-4">
+                  <li>Split game files into chunks</li>
+                  <li>Every chapter now has its own menu</li>
+                  <li>Fixed camera movement partially</li>
+                  <li>Removed some annoying screenshake</li>
+                  <li>Chapter 1: Added prologue</li>
+                  <li>Added Chapter 4</li>
+                  <li>Added Chapter 5</li>
+                  <li>Added Chapter 6</li>
+                  <li>Added Chapter 7</li>
+                  <li>Fixed some bugs</li>
+                  <li>Overhauled the employee hotel</li>
+                  <li>Added multiple endings</li>
+                  <li>Added main endings 1, 2 & 3</li>
+                  <li>Removed DLC text from the chapter selection menu</li>
+                  <li>Removed unused locked options from the menu</li>
+                  <li>Removed new game text (saving system has been scrapped)</li>
+                  <li>Removed coordinates on FPS counter</li>
+                  <li>Polished current game mechanics</li>
+                  <li>New "original" loading screen</li>
+                  <li>Changed chapter 1 image on chapter selection</li>
+                  <li>Moved difficulty selection to the chapter selection menu (any difficulty other than Liminal is NOT canon)</li>
+                  <li>Added an option to disable texture streaming</li>
+                </ul>
+                <div className="relative aspect-video size-3/5">
+                <Image
+                  src={liminalityss}
+                  alt="Liminality"
+                  fill
+                  className="object-cover rounded-lg"
+                />
+                </div>
+              </Card>
+              <Card className="bg-black/50 border border-white/10 p-6">
+                <h2 className="text-2xl font-bold mb-4 text-white">Version 0.13</h2>
+                <p className="text-gray-400 mb-4">Released on November 16, 2024</p>
+                <ul className="list-disc list-inside space-y-2 text-gray-300">
+                  <li>Removed Spooky decorations and Spooktober event</li>
+                  <li>Fixed some bugs</li>
+                  <li>Added Chapter 3</li>
+                </ul>
+              </Card>
               <Card className="bg-black/50 border border-white/10 p-6">
                 <h2 className="text-2xl font-bold mb-4 text-white">Version 0.12</h2>
                 <p className="text-gray-400 mb-4">Released on October 17, 2024</p>
@@ -78,7 +125,7 @@ export default function CyberOdysseyChangelog() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-2xl font-mono font-bold mb-4 md:mb-0">games.lory.dev</div>
             <div className="flex gap-6">
-              <Link href="https://github.com/lory-dev" className="hover:text-primary-foreground/80">
+              <Link href="https://github.com/lory-dev/games.lory.dev" target="_blank" className="hover:text-primary-foreground/80">
                 GitHub
               </Link>
               <Link href="https://lory.dev" className="hover:text-primary-foreground/80">

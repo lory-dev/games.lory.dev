@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Immersive short backrooms game.",
 };
 
-export default function CyberOdyssey() {
+export default function TheBackroomsDeluxe() {
   return (
     <div className="min-h-screen bg-black text-white">
       <header className="fixed top-0 w-full z-50 bg-black/50 backdrop-blur-sm border-b border-white/10">
@@ -120,7 +120,7 @@ export default function CyberOdyssey() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-2xl font-mono font-bold mb-4 md:mb-0">games.lory.dev</div>
             <div className="flex gap-6">
-              <Link href="https://github.com/lory-dev" className="hover:text-primary-foreground/80">
+              <Link href="https://github.com/lory-dev/games.lory.dev" target="_blank" className="hover:text-primary-foreground/80">
                 GitHub
               </Link>
               <Link href="https://lory.dev" className="hover:text-primary-foreground/80">

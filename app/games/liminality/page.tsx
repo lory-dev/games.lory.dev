@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "The most Liminal game yet.",
 };
 
-export default function CyberOdyssey() {
+export default function Liminality() {
   return (
     <div className="min-h-screen bg-black text-white">
       <header className="fixed top-0 w-full z-50 bg-black/50 backdrop-blur-sm border-b border-white/10">
@@ -45,7 +45,7 @@ export default function CyberOdyssey() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-5 h-5" />
-                    <span>2+ hours</span>
+                    <span>3+ hours</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Users className="w-5 h-5" />
@@ -55,9 +55,10 @@ export default function CyberOdyssey() {
                 <Button className="gap-2" asChild>
                   <Link href="https://store.steampowered.com/app/2916260/Liminality/" target="_blank">
                   <DollarSign className="w-4 h-4" /> 
-                    Purchase on Steam ($4,99)
+                    Purchase on Steam ($5,99*)
                   </Link>
                 </Button>
+                <p className="text-sm text-gray-400 py-2">* prices may vary; early access is 4,99$ while purchasable. early access contains 3 chapters.</p>
               </div>
               <div className="relative aspect-video">
                 <Image
@@ -84,15 +85,15 @@ export default function CyberOdyssey() {
               <Card className="bg-black/50 border border-white/10 p-6">
                 <h3 className="text-xl font-bold mb-2 text-white">Deep Lore</h3>
                 <p className="text-gray-400">
-                  You will be forgotten.
+                  Immerse yourself into the liminal spaces, and find out what created them.
                   <br />
-                  1352
+                  Save this world.
                 </p>
               </Card>
               <Card className="bg-black/50 border border-white/10 p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">Plastic Duck</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Many Chapters</h3>
                 <p className="text-gray-400">
-                  Plastic Duck makes a return fr██████████████████████████████
+                  Go though seven chapters (as of 1.0), each with its own gameplay mechanics.
                 </p>
               </Card>
             </div>
@@ -104,9 +105,9 @@ export default function CyberOdyssey() {
             <h2 className="text-3xl font-bold mb-8">Latest Updates</h2>
             <div className="space-y-6">
               <Card className="bg-black/50 border border-white/10 p-6">
-                <h3 className="text-xl font-bold mb-2 text-white">Version 0.12 Released</h3>
+                <h3 className="text-xl font-bold mb-2 text-white">Version 1.0 Releasing</h3>
                 <p className="text-gray-400 mb-2">
-                  Spooktober
+                  Full Release
                 </p>
                 <Link href="/games/liminality/changelog" className="text-blue-400 hover:underline">
                   View full changelog
@@ -122,7 +123,7 @@ export default function CyberOdyssey() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-2xl font-mono font-bold mb-4 md:mb-0">games.lory.dev</div>
             <div className="flex gap-6">
-              <Link href="https://github.com/lory-dev" className="hover:text-primary-foreground/80">
+              <Link href="https://github.com/lory-dev/games.lory.dev" target="_blank" className="hover:text-primary-foreground/80">
                 GitHub
               </Link>
               <Link href="https://lory.dev" className="hover:text-primary-foreground/80">
